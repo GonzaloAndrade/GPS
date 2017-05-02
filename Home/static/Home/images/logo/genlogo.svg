@@ -1,0 +1,53 @@
+<svg width="466" height="76" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="78" width="468" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" d="m10.35,16.04c-0.36,-4.12 3.32,-8.11 7.54,-7.61c20.37,0.02 40.75,-0.03 61.13,0.03c3.52,-0.17 6.9,3.05 6.69,6.62c0.06,14.28 0.03,28.57 0.02,42.85c0.33,4.45 -4.17,7.48 -8.29,6.97c-1.32,1.89 -2.75,4.43 -5.46,4.07c-2.69,0.29 -4.09,-2.23 -5.22,-4.2c-12.35,-0.08 -24.7,0.01 -37.05,-0.04c-1.38,1.91 -2.83,4.62 -5.64,4.24c-2.61,0.27 -3.94,-2.16 -5.09,-4.04c-4.18,0.5 -8.6,-2.45 -8.59,-6.89c-0.08,-14 0,-28 -0.04,-42z" fill="#c93626"/>
+  <defs>
+   <filter id="svg_21_blur">
+    <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+   </filter>
+       <filter id="bolt-inner-shadow">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur
+        stdDeviation="2"
+        result="offset-blur"
+      />
+      <feComposite
+        operator='out'
+        in='SourceGraphic'
+        in2='offset-blur'
+        result='inverse'
+      />
+      <feFlood
+        flood-color='6B2C22'
+        flood-opacity='1'
+        result='color'
+      />
+    
+      <!-- Clip color inside shadow -->
+      <feComposite
+        operator='in'
+        in='color'
+        in2='inverse'
+        result='shadow'
+      />
+    
+      <!-- Put shadow over original object -->
+      <feComposite
+        operator='over'
+        in='shadow'
+        in2='SourceGraphic'
+      />
+    </filter>
+  </defs>
+  <path filter="url(#bolt-inner-shadow)" d="m34,38.16058l25.61187,-25.16058l-6.831,20.03607l9.73902,-0.0752l-25.61188,25.16058l6.83101,-20.03607l-9.73902,0.0752z" id="lightning-bolt" class="loading" fill="#FFFFFF" stroke="null">
+    <animate attributeType="CSS" attributeName="fill" fill="freeze" values="#FFFFFF;#C76F63;#FFFFFF" dur="1s" repeatCount="indefinite" />
+  </path>
+  <rect fill="#c93626" stroke-width="null" stroke-opacity="null" x="98" y="7.5" width="3" height="63" id="svg_1" stroke="null"/>
+  <text filter="url(#svg_21_blur)" font-weight="bold" stroke="null" transform="matrix(1.448378246195624,0,0,2.244916590176783,-9.400977408407925,-50.642332763956084) " xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="22" id="svg_21" y="47.218197" x="82.928718" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">GEN POWER SERVICE</text>
+ </g>
+</svg>
